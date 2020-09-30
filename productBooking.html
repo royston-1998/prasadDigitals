@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Product View</title>
+  <link rel="stylesheet" href="css/productDisplay.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+  <!-- DISPLAY OF HEADER -->
+  <div id="header-display"> </div>
+  <!-- END OF DISPLAY OF HEADER -->
+  <br>
+  <!-- PRODUCT BOOKING CONTENT -->
+  <div class="container ">
+    <!-- PRODUCT BOOKING TITLE -->
+    <h4 class="header">
+      <a href="productView.html"><i class="fas fa-chevron-left"></i></a>
+      PRINT OPTION
+    </h4>
+    <hr class="hr">
+    <!-- END OF PRODUCT BOOKING TITLE -->
+
+
+                <p><label for="">Paper Quality</label>
+                  <select class="form-control" name="">
+                    <option value="signatureQuality">Signature</option>
+                    <option value="premiumQuality">Premium</option>
+                    <option value="classicQuality">Classic</option>
+                  </select></p>
+
+                <p><label for="">Paper Stock</label>
+                  <select class="form-control" name="" width="50%">
+                    <option value="matteStock">Matte</option>
+                    <option value="glossyStock">Glosy</option>
+                  </select></p>
+
+                <p><label for="">Select Design Option:</label><br>
+                  <input type="radio" name="designSelect" value=""> Design at Prasad Printers <br>
+                  <input type="radio" name="designSelect"  value=""> Sketch the design of yours and do upload it. Design files(Photoshop/Coreldraw) are encouraged.<br>
+
+                    <input type="file" class="form-control" name="" value="">
+                  
+                  <script type="text/javascript">
+                    $(document).ready(function(){
+                      $('#show-upload-design').click(function(){
+                        $('#upload-design-hidden').css("display","block");
+                      });
+                    });
+                  </script>
+
+                </p>
+
+
+                <p><label for="">Quantity</label>
+                  <input type="text" class="form-control" name="" placeholder="Min: 200 Nos"></p>
+
+                <p><i><label id="viewPrice"> </label></i></p>
+
+                <button type="button" class="btn btn-primary" name="button" onclick="document.getElementById('viewPrice').innerHTML = 'The prize is 123'">Check Price</button>
+                <button type="button" class="btn btn-primary" name="button" data-toggle="modal" data-target="#selectAddressModal">
+                  Continue
+                </button>
+
+
+                <!-- SELECT ADDRESS MODAL  -->
+                <div class="modal fade" id="selectAddressModal" tabindex="-1" role="dialog" aria-labelledby="selectAddressModal" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Select Address</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- EXISTING ADDRESS -->
+                            <div class="form-row">
+                              <div class="form-col">
+                                <input type="checkbox" name="" value="">&nbsp&nbsp&nbsp
+                              </div>
+                              <div class="form-col">
+                                <address class="">
+                                  Royston Robin Rodrigues <br>
+                                  Dsouza Compound, Bollaje House <br>
+                                  3rd Block, Mangalore <br>
+                                  Karnataka - 575030 <br>
+                                  9686914264
+                                </address>
+                              </div>
+                            </div>
+                            <!-- END OF EXISTING ADDRESS -->
+                            <hr style="border: 2px solid black;">
+                            <!-- ADD NEW ADDRESS CODE -->
+                            <h6>
+                              <a style="text-decoration: none;" data-toggle="collapse" href="#add-address" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fas fa-plus-circle"></i> Add New address
+                              </a>
+                            </h6>
+                            <div class="collapse" id="add-address">
+                              <div class="card card-body">
+                                <div class="form-group">
+                                  <label>Address Line 1</label>
+                                  <input type="text" class="form-control" placeholder="Street">
+                                </div>
+                                <div class="form-group">
+                                  <label>Address Line 2</label>
+                                  <input type="text" class="form-control" placeholder="Apartment, Block, or floor">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-5">
+                                    <label>City</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>State</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                    <label>Pin</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- END OF ADD NEW ADDRESS CODE -->
+
+                      </div>
+                      <div class="modal-footer">
+                        <a href="pageSummary.html" type="button" class="btn btn-primary" name="button" >Continue</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END OF SELECT ADDRESS MODAL -->
+
+
+
+  </div>
+  <!-- END OF PRODUCT DISPLAY CONTENT -->
+
+
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/93de56ccd5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+  <!-- END OF JAVASCRIPT -->
+
+  <!-- DEFAULT LOAD PAGE CODE -->
+  <script>
+    $(document).ready(function() {
+      $('#header-display').load('header.html');
+    });
+  </script>
+
+  <!-- END OF DEFAULT LOAD PAGE CODE -->
+
+</body>
+
+</html>

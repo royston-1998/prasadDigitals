@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Home - Prasad Digitals</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+  <!-- START OF NAVBAR -->
+  <div class="header-section">
+    <nav class="">
+
+      <!-- TOP NAVBAR -->
+      <nav id="navbar_top" class="navbar navbar-up navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h4 class="product-brand">Prasad Digitals</h4>
+            <h6 class="product-tagline text-center" style="font-size: 11px; letter-spacing: 2px; ">PRINTING INNOVATIONS</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse add-space-to-menuoption" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link style-menu" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link style-menu" href="myInfo.html">My Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link style-menu" href="myPoints.html">My Points</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link style-menu" href="myOrders.html">My Order</a>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right login-option">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button type="button" class="btn btn-outline-light" name="button" data-toggle="modal" data-target="#signupModal">
+                    Signup
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button type="button" class="btn btn-outline-light" name="button" data-toggle="modal" data-target="#loginModal">
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END OF TOP NAVBAR -->
+      <br><br><br>
+      <!-- BOTTOM NAVBAR -->
+      <div class="navbar-down navbar-light nav-up-right">
+        <div class="container">
+          <i class="far fa-heart fa-lg"></i>&nbsp&nbsp&nbsp
+
+          <i class="fas fa-dolly fa-lg"></i>&nbsp&nbsp&nbsp
+
+          <i class="fas fa-bell fa-lg"></i>&nbsp&nbsp&nbsp
+
+          <input type="text" class="search-bar" name="" value="" placeholder="Search...">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!-- END OF BOTTOM NAVBAR -->
+    </nav>
+
+  </div>
+  <!-- END OF NAVBAR -->
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="container  ">
+
+          <div class="row login-box">
+            <div id="section-one" class="col-md-3 blue-bg ">
+              <!-- Blue Block Color -->
+            </div>
+
+            <div id="section-two" class="col-md-9 p-5" style="overflow: auto;">
+              <button type="button" data-dismiss="modal" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <p>
+              <h4>SIGNUP </h4>
+              </p>
+              <p>
+
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Phone</label>
+                    <input type="text" class="form-control" placeholder="Phone">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>DOB</label>
+                    <input type="date" class="form-control" name="" value="">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Gender</label>
+                    <select class="form-control">
+                      <option>Choose Gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Address Line 1</label>
+                  <input type="text" class="form-control" placeholder="Street">
+                </div>
+                <div class="form-group">
+                  <label>Address Line 2</label>
+                  <input type="text" class="form-control" placeholder="Apartment, Block, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>City</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>State</label>
+                    <select class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>Pin</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-primary form-control">Sign in</button>
+                <label>
+                  Existing account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</a>
+                </label>
+              </form>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- END OF SIGNUP MODAL -->
+
+
+
+
+  <!-- LOGIN MODAL -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="container  ">
+
+          <div class="row login-box">
+            <div id="section-one" class="col-md-5 blue-bg ">
+              <!-- Blue Block Color -->
+            </div>
+
+            <div id="section-two" class="col-md-7 p-5">
+              <button type="button" data-dismiss="modal" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <p>
+              <h4>LOGIN</h4>
+              </p>
+              <p>
+                <label for="" class="">Mobile:</label>
+                <input type="text" class="input-field" name="" value="">
+              </p>
+              <p>
+                <label for="">OTP:</label>
+                <input type="text" class="input-field" name="" value="">
+              </p>
+              <p>
+                <button type="button" class="btn btn-outline-primary form-control" name="button">Login</button>
+              </p>
+              <p>Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Signup</a> </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- END OF LOGIN MODAL -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/93de56ccd5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- END OF JAVASCRIPT -->
+
+</body>
+
+</html>
